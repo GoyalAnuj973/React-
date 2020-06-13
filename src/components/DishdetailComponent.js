@@ -13,7 +13,7 @@ class Dishdetail extends Component {
     
     renderComments(comments) {
         if (comments == null) {
-            return (<div></div>)
+            return (<div></div>);
         }
         const cmnts = comments.map(comment => {
             return (
@@ -38,7 +38,7 @@ class Dishdetail extends Component {
                 </ul>
 
             </div>
-        )
+        );
     }
 
     renderDish(dish) {
@@ -53,10 +53,10 @@ class Dishdetail extends Component {
                         </CardBody>
                     </Card>
                 </div>
-            )
+            );
         }
         else {
-            return (<div></div>)
+            return (<div></div>);
         }
     }
 
@@ -66,7 +66,7 @@ class Dishdetail extends Component {
 
         const dish = this.props.dish
         if (dish == null) {
-            return (<div></div>)
+            return (<div></div>);
         }
         const dishItem = this.renderDish(this.props.dish)
         const commentItem = this.renderComments(this.props.dish.comments)
@@ -75,7 +75,7 @@ class Dishdetail extends Component {
                 {dishItem}
                 {commentItem}
             </div>
-        )
+        );
     }
 }
 
